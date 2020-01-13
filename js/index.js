@@ -40,7 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-
+//logo.style.backgroundColor = 'yellow';
 // "nav": {
 //   "nav-item-1": "Services",
 //   "nav-item-2": "Product",
@@ -60,6 +60,18 @@ navAnchors[3].textContent = 'Features';
 navAnchors[4].textContent = 'About';
 navAnchors[5].textContent = 'Contact';
 
+navAnchors = document.querySelectorAll('a');
+navAnchors.forEach((anchor) => {anchor.style.color = 'green';} );
+
+let newA = document.createElement('a');
+newA.href = "#";
+newA.textContent = "Prepended";
+nav.prepend(newA);
+let newA2 = document.createElement('a');
+newA2.href = "#";
+newA2.textContent = "Appended";
+nav.append(newA2);
+
 // "cta": {
 //   "h1": "DOM Is Awesome",
 //   "button": "Get Started",
@@ -67,7 +79,8 @@ navAnchors[5].textContent = 'Contact';
 // },
 
 const heading = document.querySelector('h1');
-heading.textContent = 'DOM Is Awesome';
+heading.textContent = 'DOM\n Is\n Awesome';
+heading.style.color = 'seagreen';
 
 const buttontext = document.querySelector('button');
 buttontext.textContent = 'Get Started';
@@ -88,6 +101,9 @@ headingimg.src='img/header-img.png'
 //   "vision-h4":"Vision",
 //   "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
 // },
+const middle = document.getElementById('middle-img');
+middle.src = 'img/mid-page-accent.jpg'
+
 let h4s = document.querySelectorAll('h4');
 h4s[0].textContent = 'FEATURES';
 h4s[1].textContent = 'ABOUT';
