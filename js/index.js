@@ -112,6 +112,7 @@ h4s[3].textContent = 'PRODUCT';
 h4s[4].textContent = 'VISION';
 h4s[5].textContent = 'CONTACT';
 
+
 let ps = document.querySelectorAll('p');
 ps[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 ps[1].textContent = 'About-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
