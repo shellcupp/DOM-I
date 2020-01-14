@@ -79,7 +79,7 @@ nav.append(newA2);
 // },
 
 const heading = document.querySelector('h1');
-heading.textContent = 'DOM\n Is\n Awesome';
+heading.innerHTML = 'DOM<br> Is<br> Awesome';
 heading.style.color = 'seagreen';
 
 const buttontext = document.querySelector('button');
